@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#BFA8A8</color>
+    <color name="NavajoWhite">#FFDEAD</color>>
+    <color name="colorStRed">#F21E1E</color>
+    <color name="colorStGreen">#699E45</color>
+    <color name="colorStBlue">#78BAE7</color>
+    <color name="colorTransparement">#00000000</color>
+    <color name="colorFragment">#f4f4f4</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="colorPrimary">#3F51B5</color> <!-- Example color -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Example darker color -->
+    <color name="colorAccent">#FF4081</color> <!-- Example accent color -->
+</resources>

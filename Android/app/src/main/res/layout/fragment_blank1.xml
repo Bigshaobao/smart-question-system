@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 当前科目提示 -->
+    <TextView
+        android:id="@+id/tvCurrentSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前科目"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- 新增的Subject ID输入框 -->
+    <Spinner
+        android:id="@+id/spinnerSubject"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrentSubject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 客观题模式按钮 -->
+    <Button
+        android:id="@+id/btnGoToQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="客观题模式"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSubject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 默写模式按钮 -->
+    <Button
+        android:id="@+id/btnGoToDictation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="默写模式"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToQuestions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

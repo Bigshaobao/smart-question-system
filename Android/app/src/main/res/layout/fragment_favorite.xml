@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favorite_fragment_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff">
+
+    <!-- 登录提示 -->
+    <TextView
+        android:id="@+id/login_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请先登录"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/favorite_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的收藏科目"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:background="@drawable/textview_border"
+        android:padding="12dp"
+        android:gravity="center_vertical" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subject_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:background="@drawable/recyclerview_background" />
+
+</LinearLayout>
