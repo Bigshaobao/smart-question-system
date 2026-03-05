@@ -781,6 +781,9 @@ def get_favorite_questions():
             cursor.close()
         if conn:
             conn.close()
-
+# Question REST API
+# GET /questions
+# GET /question/<id>
+# POST /login
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
