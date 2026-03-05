@@ -88,7 +88,7 @@ public class DictationActivity extends AppCompatActivity {
 
     private void fetchQuestions(int page, Runnable onLoaded) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://120.26.237.89:5000/get_dictation_questions?page=" + page
+        String url = Config.BASE_URL + "/get_dictation_questions?page=" + page
                 + "&per_page=" + perPage
                 + "&subject_id=" + subjectId;
         Request request = new Request.Builder().url(url).build();

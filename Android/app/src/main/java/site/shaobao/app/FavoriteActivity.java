@@ -110,7 +110,7 @@ public class FavoriteActivity extends AppCompatActivity {
 
     private void fetchFavoriteQuestions(int page, Runnable onLoaded) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://120.26.237.89:5000/favorite_questions?user_id=" + userId +
+        String url = Config.BASE_URL + "/favorite_questions?user_id=" + userId +
                 "&subject_id=" + subjectId + "&page=" + page + "&per_page=" + perPage;
 
         Request request = new Request.Builder().url(url).build();
@@ -242,7 +242,7 @@ public class FavoriteActivity extends AppCompatActivity {
 
     private void addFavorite(int userId, int questionId) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://120.26.237.89:5000/add_favorite";
+        String url = Config.BASE_URL + "/add_favorite";
         String json = "{\"user_id\": " + userId + ", \"question_id\": " + questionId + "}";
 
         RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), json);

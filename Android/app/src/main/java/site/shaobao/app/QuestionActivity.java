@@ -107,7 +107,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     private void fetchQuestions(int page, Runnable onLoaded) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://120.26.237.89:5000/get_objective_questions?page=" + page + "&per_page=" + perPage + "&subject_id=" + subjectId;
+        String url = Config.BASE_URL + "/get_objective_questions?page=" + page + "&per_page=" + perPage + "&subject_id=" + subjectId;
         Request request = new Request.Builder().url(url).build();
 
         client.newCall(request).enqueue(new Callback() {
@@ -247,7 +247,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     private void addFavorite(int userId, int questionId) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://120.26.237.89:5000/add_favorite";
+        String url = Config.BASE_URL + "/add_favorite";
         String jsonBody = "{\"user_id\": " + userId + ", \"question_id\": " + questionId + "}";
 
         RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), jsonBody);

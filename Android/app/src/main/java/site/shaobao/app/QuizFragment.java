@@ -103,7 +103,7 @@ public class QuizFragment extends Fragment {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.execute(() -> {
             try {
-                URL url = new URL("http://120.26.237.89:5000/get_subjects");
+                URL url = new URL(Config.BASE_URL + "/get_subjects");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("GET");
 

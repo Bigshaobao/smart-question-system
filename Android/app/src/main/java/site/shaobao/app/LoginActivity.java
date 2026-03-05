@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        String url = "http://120.26.237.89:5000/login"; // 替换为你的服务器地址
+        String url = Config.BASE_URL + "/login"; // 替换为你的服务器地址
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url, jsonBody,
                 new Response.Listener<JSONObject>() {
                     @Override

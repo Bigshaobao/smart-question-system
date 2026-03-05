@@ -88,7 +88,7 @@ public class FavoriteFragment extends Fragment {
     }
 
     private void fetchFavoriteSubjects() {
-        String url = "http://120.26.237.89:5000/favorite_subjects/" + userId;
+        String url = Config.BASE_URL + "/favorite_subjects/" + userId;
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url(url).build();
 
@@ -125,7 +125,7 @@ public class FavoriteFragment extends Fragment {
     }
 
     private void fetchFavoriteQuestions(int subjectId) {
-        String url = "http://120.26.237.89:5000/favorite_questions?user_id=" + userId + "&subject_id=" + subjectId;
+        String url = Config.BASE_URL + "/favorite_questions?user_id=" + userId + "&subject_id=" + subjectId;
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url(url).build();
 

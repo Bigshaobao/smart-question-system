@@ -68,7 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        String url = "http://120.26.237.89:5000/register";
+        String url = Config.BASE_URL + "/register";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url, jsonBody,
                 new Response.Listener<JSONObject>() {
                     @Override

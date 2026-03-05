@@ -129,7 +129,7 @@ public class UplodFragment extends Fragment {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.execute(() -> {
             try {
-                URL url = new URL("http://120.26.237.89:5000/get_subjects");
+                URL url = new URL(Config.BASE_URL + "/get_subjects");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("GET");
                 InputStream is = conn.getInputStream();
@@ -177,7 +177,7 @@ public class UplodFragment extends Fragment {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.execute(() -> {
             try {
-                URL url = new URL("http://120.26.237.89:5000/add_subject");
+                URL url = new URL(Config.BASE_URL + "/add_subject");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setDoOutput(true);
@@ -217,7 +217,7 @@ public class UplodFragment extends Fragment {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.execute(() -> {
             try {
-                URL url = new URL("http://120.26.237.89:5000/upload");
+                URL url = new URL(Config.BASE_URL + "/upload");
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setDoInput(true);
                 con.setDoOutput(true);
