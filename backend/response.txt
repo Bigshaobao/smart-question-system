@@ -1,0 +1,41 @@
+根据提供的文本内容，以下是对应的 SQL 插入语句：
+
+-- 填空题
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('进程被创建', 2, 11, '创建');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('进程被撤消', 2, 11, '撤消');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('封闭性', 2, 11, '封闭性');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('临界区', 2, 11, '临界区');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('父进程', 2, 11, '父进程');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('进程上下文', 2, 11, '进程上下文');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('可用资源数', 2, 11, '可用资源数');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('阻塞进程数', 2, 11, '阻塞进程数');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('2', 2, 11, '2');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('原语', 2, 11, '原语');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('执行速度(或调度策略)', 2, 11, '执行速度(或调度策略)');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('顺序编号', 2, 11, '顺序编号');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('递增的(或递减的)', 2, 11, '递增的(或递减的)');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('内存和外存', 2, 11, '内存和外存');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('数据交换', 2, 11, '数据交换');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('页表始址', 2, 11, '页表始址');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('静态地址重定位', 2, 11, '静态地址重定位');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('动态地址重定位', 2, 11, '动态地址重定位');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('计算时间短', 2, 11, '计算时间短');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('等待时间长', 2, 11, '等待时间长');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('I/O繁忙', 2, 11, 'I/O繁忙');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('特殊文件', 2, 11, '特殊文件');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('按名存取', 2, 11, '按名存取');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('文件目录', 2, 11, '文件目录');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('存取控制', 2, 11, '存取控制');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('按键存取法', 2, 11, '按键存取法');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('写', 2, 11, '写');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('执行', 2, 11, '执行');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('块数', 2, 11, '块数');
+
+-- 判断题
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('四个作业的平均周转时间应为88分钟。', 3, 11, '对');
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('CPU的利用率为70%，IO1和IO2的利用率分别为80%、70%。', 3, 11, '对');
+
+-- 简答题
+INSERT INTO question (question_text, question_type, subject_id, standard_answer) VALUES ('将文件资源表中的内容复制到回收的第7块中，然后将回收块号7填入文件资源表，并将块数置1。', 4, 11, '将文件资源表的内容复制到回收的第7块中，然后将回收块号7填入文件资源表，并将块数置1。');
+
+请注意，以上 SQL 语句是基于提供的文本内容生成的，实际的数据库表结构和字段可能有所不同，需要根据实际情况进行调整。同时，由于文本中没有提供选择题和多项选择题，所以没有生成对应的 SQL 插入语句。
