@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+
+# Config files (敏感信息)
+config.py
+backend/config.py
+
+# Logs
+*.log
+app.log
+
+# Database
+*.db
+
+# IDE
+.idea/
+.vscode/
+
+# Environment
+.env
+venv/
+.venv/
+
+# Android build
+Android/.gradle/
+Android/build/
+Android/app/build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
