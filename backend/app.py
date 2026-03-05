@@ -176,6 +176,10 @@ def register():
         logging.error(f"Database error: {err}")
         return jsonify({'message': 'Database error', 'status': 'error'}), 500
 
+# User Authentication Module
+# POST /login
+# POST /register
+# Session-based authentication
 @app.route('/login', methods=['POST'])
 def login():
     data = request.get_json()
